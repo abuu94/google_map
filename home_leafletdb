@@ -1,0 +1,7 @@
+SQL QUERY:
+CREATE TABLE `home_leafletdb`.`worlddata` 
+( `id` INT(11) NULL , `name` VARCHAR(25) NOT NULL , `latitude` DECIMAL(10) NOT NULL , `longitude` DECIMAL(10) NOT NULL ,
+PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+DATA INSERTION QUERY:
+INSERT INTO `worlddata` (`id`, `name`, `latitude`, `longitude`) VALUES ('1', 'New York', '41 ', '-72'), ('2', 'Boston', '42 ', '-71');
