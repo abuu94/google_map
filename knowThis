@@ -26,4 +26,15 @@ var polygon = L.polygon([
     [51.51, -0.047]
 ]).addTo(mymap);
 
+
 this above will add pplygon in the map. when you add polygon you specify several points so as to draw polygon.
+
+As my project it is better to use popup marker.
+Popups are usually used when you want to attach some information to a particular object on a map. 
+Leaflet has a very handy shortcut for this:
+
+marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+circle.bindPopup("I am a circle.");
+polygon.bindPopup("I am a polygon.");
+
+I have to find how to disable popup until clicked. therefore it seem that there is a need to find or create onclick event/listener.
